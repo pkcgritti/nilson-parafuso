@@ -4,7 +4,7 @@
 % criação. 'tdivs' define a a forma de aproximação do cilindro, por exemplo
 % 'tdivs' = 4 utiliza um triângulo como base, 'tdivs' = 5 utiliza um quadrado
 % como base, 'tdivs' = 200 aproxima uma circunferência, etc...
-function [X, Y, Z] = closed_cylinder (radius, height, zoffset, tdivs = 100)
+function [X, Y, Z] = closed_cylinder (radius, height, zoffset, tdivs)
     % Criação de constantes para definição do cilindro
     theta = linspace(0, 2 * pi, tdivs);
     zheta = linspace(0 + zoffset, height + zoffset, 20);
